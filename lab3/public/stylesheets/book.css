@@ -1,0 +1,24 @@
+body {
+	background-image: url(../img/paper.jpg);
+  text-align: left;
+}
+
+#title {
+  font-size: 50px;
+
+}
+#backs {
+	   border: solid white;
+   background: grey;
+   color : white;
+  font-size: 40px;
+  text-align: center;
+}
+#backs:hover {
+	   border: solid white;
+   background: grey;
+   color : white;
+	   background: white;
+      border: solid gray;
+	color : Grey;
+}

@@ -1,0 +1,167 @@
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  /*background-image: url(http://bestfons.ru/_ph/24/985579237.jpg);*/
+
+}
+a {
+  color: black;
+}
+a:hover {
+  /*color: #3A3;*/
+}
+
+
+
+.home {
+  width: 100%;
+  /*border: solid 1px black;*/
+  height: 180px;
+  overflow: hidden;
+}
+
+ #bookstore {
+  width: 80%;
+  /*background: #3A3;*/
+  float: left;
+  height: 80%;
+ }
+ #logInField {
+  width: 20%;
+  background: #FFFFFF;
+  float: left;
+  height: 150px;
+  text-align: right;
+ }
+ .loginLink {
+	    /*z-index:5;*/
+   color: black;
+ }
+ .loginLink:hover {
+	    /*z-index:5;*/
+   color: #3A3;
+ }
+ .loginForm {
+	    /*z-index:5;*/
+   margin-right: 0px;
+   margin-top: 20px;
+ }
+
+
+
+
+ .content {
+   width: 80%;
+   margin-left: 20%;
+   margin-right: 0%;
+ }
+
+
+
+
+ .toolbar {
+   background-color: #FFF;
+   width: 100%;
+   float: left;
+   clear: both;
+   height: 40px;
+ }
+ #search {
+   width: 33%;
+   float: left;
+   height: 40px;
+   clear: both;
+   margin-left: 10px;
+   margin-top: 10px;
+ }
+ #about {
+   width: 20%;
+   float: left;
+   height: 40px;
+
+ }
+ #contactsId {
+   margin-left: 10px;
+   margin-top: 5px;
+ }
+
+ #basket {
+   width: 20%;
+   float: right;
+   height: 40px;
+ }
+ #basketId {
+   width: 50%;
+   height: 20px;
+   margin-top: 0px;
+   margin-left: 10px;
+ }
+ .basketImg {
+   float: left;
+ }
+
+
+
+
+
+
+ #products {
+   width: 100%;
+   border: solid 2px white;
+   float: left;
+   clear: both;
+   min-height: 400px;
+ }
+.product {
+width: 250px;
+height: 360px;
+  float: left;
+  border: solid 0.5px #FFFFFF;
+  text-align: center;
+  overflow: hidden;
+  transition:all 400ms;
+}
+.product : hover{
+transform : scale(1.5);
+}
+
+.product .imgLink {
+float: left;
+width: 250px;
+height: 325px;
+position: relative;
+  transition:all 400ms;
+  -moz-transition: all 1s ease-out;
+-o-transition: all 1s ease-out;
+-webkit-transition: all 1s ease-out;
+}
+.product .imgLink : hover{
+transform : scale(1.5);
+-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-o-transform: scale(1.1);
+}
+.productLink {
+  color: black;
+}
+.productLink:hover {
+  color: #3A3;
+}
+#seachCLick{
+  display: block;
+width: 100px;
+height: 20px;
+float: right;
+}
+
+#footer_line{
+
+  float: left;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+#co {
+  text-align: center;
+}

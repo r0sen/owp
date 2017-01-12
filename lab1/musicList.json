@@ -1,0 +1,72 @@
+[
+    {
+         "title" : "Mama Yo Quiero",
+         "book" : "Carmen Miranda",
+         "published" : "1998-11-14",
+         "price" : 389,
+         "id" : 1
+    },
+    {
+         "title" : "Untrust Us",
+         "book" : "Crystal Castles",
+         "published" : "1998-10-13",
+         "price" : 456,
+         "id" : 2
+    },
+    {
+         "title" : "Crimewave",
+         "book" : "Crystal Castles",
+         "published" : "1998-09-09",
+         "price" : 1000,
+         "id" : 3
+    },
+    {
+         "title" : "Hey Sexy",
+         "book" : "Die Antwoord",
+         "published" : "1998-11-12",
+         "price" : 312,
+         "id" : 4
+    },
+    {
+         "title" : "Mama Yo Quiero",
+         "book" : "Carmen Miranda",
+         "published" : "1998-11-14",
+         "price" : 389,
+         "id" : 5
+    },
+    {
+         "title" : "Pop! Goes my heart",
+         "book" : "Hugh Grant",
+         "published" : "1998-11-14",
+         "price" : 500,
+         "id" : 6
+    },
+    {
+         "title" : "Relax",
+         "book" : "Mika",
+         "published" : "1998-08-08",
+         "price" : 103,
+         "id" : 7
+    },
+    {
+         "title" : "Baby's on fire",
+         "book" : "Die Antwoord",
+         "published" : "2012-11-20",
+         "price" : 5,
+         "id" : 8
+    },
+    {
+         "title" : "Kept",
+         "book" : "Crystal Castles",
+         "published" : "1998-09-09",
+         "price" : 666,
+         "id" : 9
+    },
+    {
+         "title" : "Freaks",
+         "book" : "Pulp",
+         "published" : "1998-11-30",
+         "price" : 312,
+         "id" : 10
+    }
+]

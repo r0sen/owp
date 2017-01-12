@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" media="screen" href="../css/styles.css" >
+  <meta http-equiv="Content-Type" content="text/html; charset=cp1251"/>
+  <title>Log In</title>
+</head>
+<body>
+  <div class="home">
+    <div id="bookstore">
+      <a href="/"><img class="bookstoreImg" alt="bookstore" src="../pics/bookstore-logo.jpg"></a>
+    </div>
+  </div>
+  <div class="regContent">
+    <form class="contact_form"  method="post" name="contact_form" >
+    <ul>
+      <li>
+           <h2>Sign In</h2>
+           <span class="required_notification"></span>
+      </li>
+      <li>
+          <label>Login:</label>
+          <input type="text" name="username" placeholder="Login" required />
+      </li>
+      <li>
+          <label>Password:</label>
+          <input type="password" name="password" placeholder="Password" required/>
+      </li>
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+      <li>
+        <button class="submit" type="submit">Sign in</button>
+      </li>
+    </ul>
+    </form>
+
+
+
+
+    <a class="loginLink" href="forgotpassword">Forgot password?</a>
+    <a class="submit" href="register">Registration</a><br><br><br>
+                <a href="/">Home</a>
+
+  </div>
+  <div id="footter">
+    <p id="copyrights">by Medvedskyi Denys 2016</p>
+  </div>
+</body>
+</html>

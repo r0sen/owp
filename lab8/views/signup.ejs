@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" media="screen" href="../css/styles.css" >
+  <meta http-equiv="Content-Type" content="text/html; charset=cp1251"/>
+  <title>Register</title>
+</head>
+<body>
+  <div class="home">
+    <div id="bookstore">
+      <a href="/"><img class="bookstoreImg" alt="bookstore" src="../pics/bookstore-logo.jpg"></a>
+    </div>
+  </div>
+  <div class="regContent">
+    <form class="contact_form"  method="post" name="contact_form">
+        <ul>
+            <li>
+                 <h2>Sign up</h2>
+                 <span class="required_notification">* Denotes Required Field</span>
+            </li>
+            <li>
+                <label>First name:</label>
+                <input type="text" name="firstname" placeholder="First name" required />
+            </li>
+            <li>
+                <label>Last name:</label>
+                <input type="text" name="lastname" placeholder="Last name" required />
+            </li>
+            <li>
+                  <label>E-mail:</label>
+                <input type="text" name="email" placeholder="example@gmail.com" required />
+            </li>
+            <li>
+                <label>Username:</label>
+                <input type="text" name="username" placeholder="Username" required />
+            </li>
+            <li>
+                <label>Password:</label>
+                <input type="text" name="password" placeholder="Password" required />
+            </li>
+            <li>
+                <label>Confirm password:</label>
+                <input type="text" name="confirmPassword" placeholder="Password" required />
+            </li>
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <li>
+              <button class="submit" type="submit">Sign up</button>
+            </li>
+        </ul>
+    </form>
+
+
+
+<br>
+            <a href="/users/login" id="loginLink"><div>Log in</div></a>
+                            <a href="/">Home</a>
+    <p>
+    </p>
+
+    <% if(typeof errors != 'undefined'){ %>
+    <% errors.forEach(function(elements){ %>
+    <div class="alert alert-danger"><%= elements.msg %></div>
+    <%}); %>
+    <%} %>
+
+    <div class="row">
+      <% if(typeof success_msg != 'undefined'){ %>
+        <div class="alert alert-success"><%= success_msg %></div>
+      <%} %>
+      <% if(typeof error_msg != 'undefined'){ %>
+        <div class="alert alert-success"><%= error_msg %></div>
+      <%} %>
+      <% if(typeof error != 'undefined'){ %>
+        <div class="alert alert-success"><%= error %></div>
+      <%} %>
+    </div>
+
+  </div>
+  <div id="footter">
+    <p id="copyrights">by Medvedskyi Denys 2016</p>
+  </div>
+</body>
+</html>

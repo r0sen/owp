@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/styles.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=cp1251"/>
+  <title>Bookstore</title>
+ </head>
+ <body>
+   <div id="bookstore">
+
+     <a href="/"><img class="bookstoreImg" alt="bookstore" src="../pics/bookstore-logo.jpg"></a>
+   </div>
+<!-- Special part start -->
+<div class="content">
+  <div id="datBook">
+    <div id="upper">
+   <img class="currentImg" alt='<%= title %>' src="<%= image_url %>" width="200px" lenght="200px">
+   <div id="right" class = "stroke2">
+     <label><%= title %></label>
+     <br>
+     <label>$<%= price %></label>
+   </div>
+ </div>
+   <div id="Content" class = "stroke">
+     <p>
+     Title: <%= title %><br>
+     Genre: <%= genre %><br>
+     Description: <%= description %><br>
+     Author: <%= author %><br>
+     Publisher: <%= publisher %><br>
+     Pages: <%= pages %><br>
+     Price: $<%= price %><br>
+     Release_date: <%= release_date %><br>
+     Age_limit: <%= age_limit %><br>
+     Language: <%= language %><br><br><br>
+     <a href="/about" class="button11">Buy It</a>
+
+   </div>
+
+      <form  action = "/delete/<%= id%>" class="contact_form"  method="post" name="contact_form" accept-charset="UTF-8">
+
+                <button class="submit" type="submit">Delete Book</button>
+
+        </form>
+
+ </div>
+</div>
+<!-- Special part ends -->
+<div id="footter">
+  <p id="copyrights">by Medvedskyi Denys 2016 </p>
+</div>
+</body>
+</html>

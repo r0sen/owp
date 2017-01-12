@@ -1,0 +1,23 @@
+</html>
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=cp1251" />
+  <link rel="stylesheet" href="../stylesheets/books.css">
+  <title>The best book books in the world</title>
+ </head>
+ <body>
+  <h1 id="color">book books</h1>
+
+  <p class="hr">
+    <% for (let i = 0; i < arr.length; i++) {  %>
+      <a title="<%= arr[i].book %>" href="/books/<%= arr[i].href %>"><img class="imgLink" alt='<%= arr[i].book %>' src="<%= arr[i].imgPath %>"></a>
+    <%}%>
+
+  </p>
+  <p id="ph">
+  <a href="/">Go back!</a>
+  </p>
+ </body>
+</html>

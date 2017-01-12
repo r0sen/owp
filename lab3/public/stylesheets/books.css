@@ -1,0 +1,42 @@
+body {
+
+  background-image: url(../images/paper.jpg);
+}
+
+.imagesView:hover {
+  border: 3px groove white;
+  cursor: pointer;
+}
+@font-face {
+  font-family: Book;
+  src: url(fonts/font1.ttf);
+}
+
+h1 {
+  font-size: 75px;
+  font-family: Book;
+  text-align: center;
+  color: black;
+}
+
+#backs {
+	   border: solid white;
+   background: grey;
+   color : white;
+  font-size: 40px;
+  text-align: center;
+}
+#backs:hover {
+	   border: solid white;
+   background: grey;
+   color : white;
+	   background: white;
+      border: solid gray;
+	color : Grey;
+}
+
+img {
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 3px groove gray;
+}

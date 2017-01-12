@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <link rel="stylesheet" href="../css/index.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=cp1251"/>
+  <title>Bookstore</title>
+ </head>
+ <body>
+<!-- Special part start -->
+<div class="content">
+  <div id="datBook">
+    <div id="upper">
+   <img class="currentImg" alt='<%= title %>' src="<%= image_url %>" width="300px" lenght="300px">
+   <div id="right">
+     <label><%= title %></label>
+     <br>
+     <label>$<%= price %></label>
+   </div>
+ </div>
+   <div id="Content">
+     <p>
+     title: <%= title %><br>
+     genre: <%= genre %><br>
+     description: <%= description %><br>
+     author: <%= author %><br>
+     publisher: <%= publisher %><br>
+     pages: <%= pages %><br>
+     price: $<%= price %><br>
+     release_date: <%= release_date %><br>
+     age_limit: <%= age_limit %><br>
+     language: <%= language %><br>
+     <button>Add to Basket</button>
+   </div>
+ </div>
+</div>
+<!-- Special part ends -->
+<div id="footter">
+  <p id="copyrights">by Medvedskyi Denys 2016</p>
+</div>
+</body>
+</html>

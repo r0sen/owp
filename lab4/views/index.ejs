@@ -1,0 +1,54 @@
+<% console.log(user)%>
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="Content-Type" content="text/html; charset=cp1251"/>
+  <title>Bookstore</title>
+ </head>
+ <body>
+<div class="home">
+  <div id="bookstore">
+    <a href="/"><img class="bookstoreImg" alt="bookstore" src="../pics/bookstore-logo.jpg"></a>
+  </div>
+  <div id="logInField">
+    <% if(null == user) {%>
+      <br><br>
+      <div id="logregField">
+        <a href="/users/login" id="loginLink"><div>Log in</div></a>
+        <a href="/users/register" id="loginLink"><div>Register</div></a>
+               <a href="about">About Us</a>
+
+      </div>
+    <%}else {%>
+      <br><br>
+      <div id="profileField">
+        <a href="/users/profile"><label><%= user.firstname %> <%= user.lastname %></label></a>
+        <a href="/users/profile"><img class="profileImg" alt='profileImg' src="../pics/avatars/<%= user.avatar %>" width="66px" lenght="66px"></a>
+        <a href="/users/logout" id="loginLink"><div>Log out</div></a>
+               <a href="about">About Us</a>
+      </div>
+    <%} %>
+  </div>
+  </form>
+</div>
+</div>
+<div class="content">
+  <div class="left-toolbar">
+    <div id="search"><form>
+   <input type="search" name="Search" placeholder="Search">
+   <input type="submit" value="Search"></div>
+  </div>
+  <div id="products">
+    <% for (let i = 0; i < arr.length; i++) {  %>
+       <div class="product"><a href="<%= arr[i].link %>" class="productLink"><img class="imgLink" alt="<%= arr[i].name %>" src="<%=arr[i].image%>" width="85%" lenght="85%"><%= arr[i].name %></a></div>
+    <%}%>
+  </div>
+</div>
+<a href="books/1">About Us</a>
+<div id="footer_line">
+  <p id="co">by Medvedskyi Denys 2016</p>
+</div>
+</body>
+</html>
